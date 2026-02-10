@@ -7,7 +7,7 @@ class SocketService {
   }
 
   connect() {
-    this.socket = io('http://localhost:3000');
+    this.socket = io('https://landgrab-backend.onrender.com/');
 
     this.socket.on('connect', () => {
       console.log('Connected to server');
